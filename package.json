@@ -1,0 +1,19 @@
+{
+  "name": "rencerprop_rect",
+  "version": "1.0.0",
+  "description": "This is a poc for render prop feature of react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HBandesh/RenderPropPOC_React.git"
+  },
+  "author": "Harnoor Bandesh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HBandesh/RenderPropPOC_React/issues"
+  },
+  "homepage": "https://github.com/HBandesh/RenderPropPOC_React#readme"
+}

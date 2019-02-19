@@ -1,7 +1,5 @@
 import React from 'react';
 
-var fetchUrl = require("fetch").fetchUrl;
-
 export class AvengerList extends React.Component {
     constructor(props) {
         super(props);
@@ -11,11 +9,11 @@ export class AvengerList extends React.Component {
     }
 
     fetchAvengers = () => {
-        fetchUrl("https://demo5413351.mockable.io/getAvengersList", (err, meta, body) => {
+        fetch("https://demo5413351.mockable.io/getAvengersList").then((res)=> res.json()).then((resp)=> {
             this.setState({
-                list: JSON.parse(body.toString()).avengers
-            })
-        })
+                list: resp.avengers
+           });
+        });
     }
 
     componentDidMount = () => {
